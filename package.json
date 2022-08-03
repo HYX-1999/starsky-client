@@ -12,16 +12,20 @@
     "@types/node": "^18.6.3",
     "ahooks": "^3.6.2",
     "antd": "^4.22.3",
+    "ramda": "^0.28.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.3.0"
   },
   "devDependencies": {
+    "@types/ramda": "^0.28.15",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.0.0",
+    "less": "^4.1.3",
     "sass": "^1.54.0",
     "typescript": "^4.6.4",
-    "vite": "^3.0.0"
+    "vite": "^3.0.0",
+    "vite-plugin-style-import": "^2.0.0"
   }
 }
