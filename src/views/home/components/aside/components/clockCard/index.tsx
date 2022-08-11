@@ -12,9 +12,7 @@ import $style from "./index.scss"
 
 const ClockCard = () => {
   const { hour, minute, second, runPerSecond } = useClock()
-  useInterval(() => {
-    runPerSecond()
-  }, 1000)
+  useInterval(runPerSecond, 1000)
   return (
     <Card className={$style.card}>
       <div className={$style.dial}>
