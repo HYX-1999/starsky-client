@@ -35,6 +35,12 @@ module.exports = merge(baseConfig, {
     },
     historyApiFallback: true,
   },
+  watch: true,
+  watchOptions: {
+    ignored: /node_modules/,
+    aggregateTimeout: 300,
+    poll: 1000,
+  },
   // 插件配置
   plugins: [
     // 引入热替换
