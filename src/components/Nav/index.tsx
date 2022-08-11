@@ -26,7 +26,7 @@ const Nav = ({ navShow, setNavShow }: Props) => {
     "mousewheel",
     (event) => {
       event = event || window.event
-      setNavShow && setNavShow(event.wheelDeltaY > 0)
+      setNavShow && setNavShow(event.wheelDeltaY < 0)
     },
     { target: document.body }
   )
