@@ -5,13 +5,13 @@
  */
 
 import React from "react"
-import BlogCard from "./components/blogCard"
-import AccountCard from "./components/accountCard"
-import DataCard from "./components/dataCard"
-import NoticeCard from "./components/noticeCard"
-import ClockCard from "./components/clockCard"
-import TagCard from "./components/tagCard"
-import SiteCard from "./components/siteCard"
+import BlogCard from "./blogCard"
+import AccountCard from "./accountCard"
+import DataCard from "./dataCard"
+import NoticeCard from "./noticeCard"
+import ClockCard from "./clockCard"
+import TagCard from "./tagCard"
+import SiteCard from "./siteCard"
 import $style from "./index.scss"
 
 const Aside = () => {
