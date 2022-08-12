@@ -26,7 +26,7 @@ const Nav = ({ navShow, setNavShow }: Props) => {
     "mousewheel",
     (event) => {
       event = event || window.event
-      setNavShow && setNavShow(event.wheelDeltaY < 0)
+      setNavShow && setNavShow(event.wheelDeltaY > 0)
     },
     { target: document.body }
   )
@@ -34,7 +34,7 @@ const Nav = ({ navShow, setNavShow }: Props) => {
   const { navArr, secondNavArr } = useLinkList()
   const navigate = useNavigate()
   return (
-    <nav className={classNames($style.nav, { [$style.hiddenNav]: navShow })}>
+    <nav className={classNames($style.nav, { [$style.hiddenNav]: !navShow })}>
       <div className={$style.navContent}>
         {/* 主页 */}
         <div className={$style.homeBtn} onClick={() => navigate("/")}>
