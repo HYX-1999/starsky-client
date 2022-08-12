@@ -9,7 +9,7 @@ import { storeState } from "@/redux/interface"
 import { useEventListener } from "ahooks"
 import { map } from "ramda"
 import React from "react"
-import { AiOutlineHome, AiOutlineSetting } from "react-icons/ai"
+import { HomeOutlined, SettingOutlined } from "@ant-design/icons"
 import { connect } from "react-redux"
 import { NavLink, useNavigate } from "react-router-dom"
 import { useLinkList } from "./config"
@@ -38,7 +38,7 @@ const Nav = ({ navShow, setNavShow }: Props) => {
       <div className={$style.navContent}>
         {/* 主页 */}
         <div className={$style.homeBtn} onClick={() => navigate("/")}>
-          <AiOutlineHome />
+          <HomeOutlined />
         </div>
         {/* 后台管理 */}
         <a
@@ -47,7 +47,7 @@ const Nav = ({ navShow, setNavShow }: Props) => {
           target="_blank"
           rel="noreferrer"
         >
-          <AiOutlineSetting />
+          <SettingOutlined />
         </a>
         {/* 文章单独按钮 */}
         <div className={$style.articlesBtn}>
