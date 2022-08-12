@@ -12,20 +12,30 @@ import { connect } from "react-redux"
 import { setNavShow } from "@/redux/actions"
 import Section from "./components/section"
 import $style from "./index.scss"
+import { useMount, useSafeState } from "ahooks"
 
 type Props = {
   setNavShow: Function
 }
 
+const getPoem = require("jinrishici")
+
 const Home = ({ setNavShow }: Props) => {
   useTop(setNavShow)
+
+  const [poem, setPoem] = useSafeState("")
+  useMount(() => {
+    getPoem.load(
+      (res: {
+        data: {
+          content: string
+        }
+      }) => setPoem(res.data.content)
+    )
+  })
   return (
     <div>
-      <PageTitle
-        height="100vh"
-        title="满天星辰"
-        desc="若到江南赶上春，千万和春住。"
-      />
+      <PageTitle height="100vh" title="满天星辰" desc={poem ?? ""} />
       <div className={$style.body}>
         <Section />
         <Aside />

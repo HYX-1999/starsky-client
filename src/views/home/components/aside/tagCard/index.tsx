@@ -6,9 +6,36 @@
 
 import React from "react"
 import Card from "@/components/Card"
+import { map } from "ramda"
+import $style from "./index.scss"
 
 const TagCard = () => {
-  return <Card>TagCard</Card>
+  const tags = [
+    "JavaScript",
+    "CSS",
+    "GitHub",
+    "Webpack",
+    "ES6",
+    "HTML",
+    "TypeScript",
+    "React",
+    "Vue",
+    "Golang",
+    "HTTP",
+  ]
+
+  return (
+    <Card className={$style.card}>
+      {map(
+        (item) => (
+          <span key={item} className={$style.tag}>
+            {item}
+          </span>
+        ),
+        tags
+      )}
+    </Card>
+  )
 }
 
 export default TagCard
