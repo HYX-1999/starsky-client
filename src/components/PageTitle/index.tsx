@@ -16,8 +16,8 @@ type Props = {
 const PageTitle = ({ height = "300px", title, desc }: Props) => {
   return (
     <div style={{ height }} className={$style.box}>
-      <h1 className={$style.title}>{title}</h1>
-      {desc && <h3 className={$style.desc}>{desc}</h3>}
+      <div className={$style.title}>{title}</div>
+      {desc && <div className={$style.desc}>{desc}</div>}
     </div>
   )
 }

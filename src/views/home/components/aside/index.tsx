@@ -11,7 +11,6 @@ import DataCard from "./dataCard"
 import NoticeCard from "./noticeCard"
 import ClockCard from "./clockCard"
 import TagCard from "./tagCard"
-import SiteCard from "./siteCard"
 import $style from "./index.scss"
 
 const Aside = () => {
@@ -23,7 +22,6 @@ const Aside = () => {
       <NoticeCard />
       <ClockCard />
       <TagCard />
-      <SiteCard />
     </aside>
   )
 }
