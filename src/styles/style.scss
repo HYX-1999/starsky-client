@@ -10,3 +10,18 @@
 .hover:hover {
   background-color: $hoverColor !important;
 }
+
+.tagBase {
+  display: inline-block;
+  padding: 0 8px;
+  margin: 2px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 18px;
+  user-select: none;
+  color: $textColor;
+  border-radius: 10px;
+  cursor: pointer;
+  @extend .hover;
+}
