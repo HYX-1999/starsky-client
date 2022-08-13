@@ -16,9 +16,7 @@ const isDevelopment = process.env.NODE_ENV === "development"
 const isProduction = process.env.NODE_ENV === "production"
 
 const myAntd = {
-  "primary-color": "#1DA57A",
-  "link-color": "#1DA57A",
-  "border-radius-base": "8px",
+  "primary-color": "rgb(69, 69, 88)",
 }
 
 const getCssLoaders = () => {
