@@ -8,7 +8,7 @@ import React from "react"
 import classNames from "classnames"
 import $style from "./index.scss"
 
-type Props = {
+interface Props {
   children?: any
   className?: string
 }

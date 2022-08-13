@@ -14,7 +14,7 @@ import Section from "./components/section"
 import $style from "./index.scss"
 import { useMount, useSafeState } from "ahooks"
 
-type Props = {
+interface Props {
   setNavShow: Function
 }
 

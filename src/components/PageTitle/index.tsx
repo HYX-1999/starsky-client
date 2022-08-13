@@ -7,7 +7,7 @@
 import React from "react"
 import $style from "./index.scss"
 
-type Props = {
+interface Props {
   height?: string
   title?: string
   desc?: string

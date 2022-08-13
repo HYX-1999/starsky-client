@@ -16,7 +16,7 @@ import { useLinkList } from "./config"
 import $style from "./index.scss"
 import classNames from "classnames"
 
-type Props = {
+interface Props {
   navShow?: boolean
   setNavShow?: Function
 }
@@ -26,7 +26,9 @@ const Nav = ({ navShow, setNavShow }: Props) => {
     "mousewheel",
     (event) => {
       event = event || window.event
-      setNavShow && setNavShow(event.wheelDeltaY > 0)
+      if (setNavShow) {
+        setNavShow(event.wheelDeltaY > 0)
+      }
     },
     { target: document.body }
   )

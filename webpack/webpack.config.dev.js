@@ -42,10 +42,7 @@ module.exports = merge(baseConfig, {
     poll: 1000,
   },
   // 插件配置
-  plugins: [
-    // 引入热替换
-    new webpack.HotModuleReplacementPlugin(),
-  ],
+  plugins: [],
   optimization: {
     minimize: false,
     minimizer: [],

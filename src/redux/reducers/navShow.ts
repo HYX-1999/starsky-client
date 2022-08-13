@@ -6,7 +6,7 @@
 
 import { SET_NAV_SHOW } from "../constant"
 
-type Action = {
+interface Action {
   type: string
   data: boolean
 }

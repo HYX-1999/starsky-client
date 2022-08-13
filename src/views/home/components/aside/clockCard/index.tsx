@@ -16,25 +16,25 @@ const ClockCard = () => {
   return (
     <Card className={$style.card}>
       <div className={$style.dial}>
-        <div className={$style.zero}></div>
-        <div className={$style.six}></div>
-        <div className={$style.three}></div>
-        <div className={$style.nine}></div>
+        <div className={$style.zero} />
+        <div className={$style.six} />
+        <div className={$style.three} />
+        <div className={$style.nine} />
       </div>
       <div className={$style.container}>
-        <div className={$style.dot}></div>
+        <div className={$style.dot} />
         <div
           className={$style.clockMinuteLine}
           style={{ transform: `rotateZ(${minute}deg)` }}
-        ></div>
+        />
         <div
           className={$style.clockHourLine}
           style={{ transform: `rotateZ(${hour}deg)` }}
-        ></div>
+        />
         <div
           className={$style.clockSecondLine}
           style={{ transform: `rotateZ(${second}deg)` }}
-        ></div>
+        />
       </div>
     </Card>
   )
