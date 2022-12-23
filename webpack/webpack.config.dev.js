@@ -25,7 +25,7 @@ module.exports = merge(baseConfig, {
   // webpack-dev-server 的一下配置，webpack-dev-server 会提供一个本地服务(serve)
   devServer: {
     host: "localhost",
-    port: 8080,
+    port: 8000,
     compress: true, // gzip压缩
     hot: true, // 热更新
     open: true, // 启动时打开浏览器
